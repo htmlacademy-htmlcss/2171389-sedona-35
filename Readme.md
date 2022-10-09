@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Нина Феоктистова](https://up.htmlacademy.ru/htmlcss/35/user/2171389).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Малиновская`(https://up.htmlacademy.ru/profession/frontender/15/htmlcss/35/user/29644).
 
 ---
 
