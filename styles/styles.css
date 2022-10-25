@@ -22,10 +22,46 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
 }
 
-.page-header {
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+/*.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+}*/
+
+.navigation {
+  display: flex;
+  margin: 0 70px;
+}
+
+.page-header-logo-link {
+  margin-right: 28px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 500px;
+  list-style-type: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.navigation-user {
+  max-width: 380px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -36,6 +72,7 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
 }
 
 .search-header {
@@ -48,18 +85,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.visually-hidden {
+  visibility: hidden;
+  margin: 0;
+}
+
 .main-index {
   text-align: center;
 }
 
 .welcome {
-  width: 1200px;
   height: 485px;
   background-image: url("../images/divider.svg"), url("../images/background/index-background.jpg");
   background-color: #6495ed;
   background-position: center bottom, center;
   background-repeat: no-repeat no-repeat;
-
 }
 
 .title {
@@ -67,16 +107,27 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subtitle {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
 }
 
-.advantages {
-  background-color: #FFFFFF;
+.advantages-main-title {
+  width: 620px;
+  padding-left: 290px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .advantages-title {
@@ -84,10 +135,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages-description {
   color: #333333;
+  margin: 0;
+}
+
+.wrapper-dark-blue {
+  width: 400px;
 }
 
 .dark-blue {
@@ -107,6 +164,13 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.services-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 24px;
@@ -119,21 +183,52 @@ body {
 }
 
 .search {
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 304px;
+}
+
+.search-description {
+  margin-top: 20px;
+}
+
+.search-link {
+  margin-top: 54px;
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 258px 104px;
   background-image: url("../images/background/subscribe-background.jpg");
   background-color: #82B3D3;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   color: #FFFFFF;
 }
 
 .subscribe-description {
   color: #FFFFFF;
+  margin-top: 20px;
+  width: 475px;
 }
 
-.page-footer {
-  background-color: #FFFFFF;
+.subscribe-form {
+  margin-top: 54px;
+}
+
+.page-footer-contacts {
+  margin: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer-social {
+  list-style-type: none;
+  margin: 0;
+  max-width: 240px;
 }
 
 .page-footer-phone {
@@ -143,10 +238,10 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -167,27 +262,43 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .inner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 70px 70px;
   background-image: url("../images/background/catalog-background.jpg");
   background-color: #6495ed;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  font-weight: 700;
   color: #FFFFFF;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
 .breadcrumbs-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  margin-top: 40px;
 }
 
 .catalog-filter-title {
@@ -209,9 +320,8 @@ body {
   background: none;
 }
 
-.results{
-  background-color: #FFFFFF;
-}
+/*.results{
+}*/
 
 .results-title {
   font-weight: 700;
@@ -291,8 +401,4 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-}
-
-.visually-hidden {
-  visibility: hidden;
 }
